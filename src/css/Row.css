@@ -5,25 +5,29 @@
 .row__posters {
   display: flex;
   overflow-y: hidden;
-  padding: 20px;
+  padding: 20px 0px;
 }
 .row__posters::-webkit-scrollbar {
   display: none;
 }
+.row__posterContainer {
+  position: relative;
+  display: contents;
+}
 .row__poster {
   object-fit: contain;
   width: 100%;
-  max-height: 100px;
+  max-height: 145px;
   margin-right: 10px;
   transition: transform 450ms;
 }
 
 .row__poster:hover {
-  transform: scale(1.08);
+  transform: scale(1.2);
 }
 
 .row__posterlarge {
-  max-height: 250px;
+  max-height: 350px;
 }
 
 .row__posterlarge:hover {
